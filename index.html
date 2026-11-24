@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Campus Bites food menu and student registration page">
+
+    <title>Campus Bites | Student Portal</title>
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- HEADER AND NAVIGATION -->
+    <header class="site-header">
+
+        <nav class="navbar container" aria-label="Main navigation">
+
+            <a class="brand" href="#">
+                Campus<span>Bites</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#menu">Our Menu</a>
+                <a href="#registration">Student Registration</a>
+                <a href="#academic">Academic Details</a>
+            </div>
+
+        </nav>
+
+        <!-- HERO SECTION -->
+        <section class="hero container">
+
+            <p class="eyebrow">GOOD FOOD · GREAT COMMUNITY</p>
+
+            <h1>Welcome to Campus Bites</h1>
+
+            <p>Explore our menu and complete the student registration form below.</p>
+
+            <a class="button button-light" href="#menu">
+                Explore the Menu
+            </a>
+
+        </section>
+
+    </header>
+
+
+    <main class="container">
+
+        <!-- MENU SECTION -->
+        <section class="section" id="menu">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">FRESHLY SERVED</p>
+
+                <h2>Today's Menu</h2>
+
+                <p>Some familiar favourites, served with care.</p>
+
+            </div>
+
+
+            <div class="menu-grid">
+
+                <article class="menu-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?auto=format&fit=crop&w=900&q=85"
+                        alt="Pilau rice">
+
+                    <div class="menu-card-content">
+
+                        <h3>Pilau</h3>
+
+                        <p class="price">Ksh 350</p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="menu-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85"
+                        alt="Vegetable meal">
+
+                    <div class="menu-card-content">
+
+                        <h3>Ugali Sukuma</h3>
+
+                        <p class="price">Ksh 250</p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="menu-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=85"
+                        alt="Prepared meal">
+
+                    <div class="menu-card-content">
+
+                        <h3>Chapati (2)</h3>
+
+                        <p class="price">Ksh 1000</p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- STUDENT REGISTRATION SECTION -->
+        <section class="section form-section" id="registration">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">GET STARTED</p>
+
+                <h2>Student Registration</h2>
+
+                <p>Fill in your personal details below.</p>
+
+            </div>
+
+
+            <form class="form-card" action="#" method="post">
+
+                <!-- PERSONAL INFORMATION -->
+                <fieldset>
+
+                    <legend>Personal Information</legend>
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="firstname">First Name</label>
+
+                            <input
+                                type="text"
+                                id="firstname"
+                                name="firstname"
+                                placeholder="Enter first name"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="lastname">Last Name</label>
+
+                            <input
+                                type="text"
+                                id="lastname"
+                                name="lastname"
+                                placeholder="Enter last name"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">Email Address</label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="name@example.com"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="phone">Phone Number</label>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="0712345678"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="gender">Gender</label>
+
+                            <select id="gender" name="gender" required>
+
+                                <option value="">Select Gender</option>
+
+                                <option value="female">Female</option>
+
+                                <option value="male">Male</option>
+
+                                <option value="prefer-not-to-say">
+                                    Prefer not to say
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="dob">Date of Birth</label>
+
+                            <input
+                                type="date"
+                                id="dob"
+                                name="dob"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="username">Username</label>
+
+                            <input
+                                type="text"
+                                id="username"
+                                name="username"
+                                placeholder="Choose a username"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="password">Password</label>
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Create a password"
+                                required>
+
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+
+                <!-- ACADEMIC INFORMATION -->
+                <fieldset id="academic">
+
+                    <legend>Academic Information</legend>
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="courseyear">
+                                Course / Year of Study
+                            </label>
+
+                            <input
+                                type="text"
+                                id="courseyear"
+                                name="courseyear"
+                                placeholder="e.g. BBIT, Year 2"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="hobbies">Hobbies</label>
+
+                            <input
+                                type="text"
+                                id="hobbies"
+                                name="hobbies"
+                                placeholder="Your hobbies">
+
+                        </div>
+
+
+                        <div class="form-group full-width">
+
+                            <label for="interest">Area of Interest</label>
+
+                            <textarea
+                                id="interest"
+                                name="interest"
+                                rows="4"
+                                placeholder="Tell us about your interests">
+                            </textarea>
+
+                        </div>
+
+                    </div>
+
+                </fieldset>
+
+
+                <!-- SUBMIT BUTTON -->
+                <button class="button" type="submit">
+                    Submit Registration
+                </button>
+
+                <p class="form-note">
+                    Demo form: information is not stored or submitted to a server.
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <p>
+            &copy; 2026 Campus Bites. Learning HTML &amp; CSS.
+        </p>
+
+    </footer>
+
+</body>
+</html>
